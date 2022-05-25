@@ -1,0 +1,94 @@
+$inputColor: #f9f9f9;
+$myColor: #ff748d;
+
+*{
+    margin: 0;
+   
+    box-sizing: border-box;
+    scrollbar-width: none;
+
+}
+
+
+.navbar{
+    display: flex;
+    height: 90px;
+    box-shadow: 10px 10px 20px rgba(142, 142, 142, 0.419);
+    justify-content: space-around;
+    .title{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        padding-left: 3rem;
+        p{
+            font-size: 35px;
+       
+        color:$myColor;
+       
+        }
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .link{
+            margin-left: 3rem;
+            font-size: 22px;
+            text-decoration: none;
+            color: #838383;
+        }
+    }
+
+
+}
+
+.container{
+width: 100%;
+height: 100vh;
+
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+::-webkit-scrollbar {display:none;}
+.post{
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px gainsboro;
+    border-radius: 5px;
+    height: 13rem;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    img{
+        border-radius: 100px;;
+        width: 70px;
+        height: 70px
+    }
+    .post_data{
+        margin-left: 2rem;
+        .name{
+            font-size: 29px;
+            color: rgba(43, 43, 43, 0.738);
+        }
+        .description{
+            font-size: 15px;
+            color: rgba(43, 43, 43, 0.738);
+        }
+    }
+    .icon{
+    width: 17rem;
+    clip-path: circle(35.0% at 100% 51%);
+    color: #ff748d;
+    background-color: #ff748d;
+    }
+}
